@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
-     
   },
   "keywords": [
     "blog",
@@ -19,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "materialize-css": "^1.0.0",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.4"
   },
