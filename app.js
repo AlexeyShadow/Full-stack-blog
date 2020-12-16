@@ -4,7 +4,9 @@ const path = require('path');
 const postRouter = require('./routes/post');
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fsblog');  
+mongoose.connect('mongodb://localhost/Full-stack-blog')
+  .then ( () => console.log('MongoDB connected') )
+  .catch (error => console.error(error) )
 
 const port = process.env.PORT || 5000;
 const clientPath = path.join(__dirname, 'client');
