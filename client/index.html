@@ -19,12 +19,34 @@
     <div class="row">
       <div class="col s12 m8 offset-m2 l6 offset-l3" id="posts">
 
-        
-
       </div>
+    </div>
+  </div> 
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red modal-trigger" data-target="createForm">
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
+  <div id="createForm" class="modal">
+    <div class="modal-content">
+      <h4>Add new post</h4>
+      <div class="input-field">
+        <input id="title" type="text" class="validate" required>
+        <label for="title">Topic</label>
+      </div>
+
+      <div class="input-field">
+        <textarea id="text" class="materialize-textarea"></textarea>
+        <label for="text">Content</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="waves-effect waves-light btn" id="createPost">Add post</a>
     </div>
   </div>
 
-  <script src="index.js"></script>
+  <script src="index.js"></script> 
 </body>
 </html>

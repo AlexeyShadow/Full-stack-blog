@@ -16,6 +16,7 @@ const card = post => {
  }
 
 let posts = [];
+let modal;
 const BASE_URL = '/api/post';
 
 class PostApi {
@@ -30,6 +31,7 @@ class PostApi {
         posts = backendPosts.concat()
         renderPosts(posts)
      })
+     M.Modal.init(document.querySelector('.modal'))
  })
 
  function renderPosts(_posts = []) {
